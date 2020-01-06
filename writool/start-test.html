@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HireArticleWriter</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+  <script src="js/bootstrap.min.js"></script>
+
+  <!--font--->
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,400i,700|Roboto:300,400,400i,500,700,900&display=swap" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!---animation-css-->
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+  <!--custom-css-->  
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+<style>
+    section.test-start {
+    padding: 59px;
+}
+
+.assignment-block {
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+   .assignment-block .btn-signup {
+    background-color: #e55a19;
+    border-radius: 0px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 9px 24px;
+    font-weight: 700;
+}
+
+.assignment-block .recommended-block {
+     
+    background-color: #edf9ff;
+}
+.assignment-block .recommended-heading {
+    background-color: #044269;
+    color: #fff;
+    padding: 12px 0px 7px 1px;
+}
+.assignment-block .recommended-content {
+    padding: 37px 12px 31px 76px;
+}
+.test-start .btn-query{
+    background-color: #044269;
+    border-radius: 0px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 9px 24px;
+    font-weight: 700;
+}
+.test-start .query-button {
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+}
+/* section 2nd */
+section.Assignment {
+    padding: 36px;
+}
+.assignment-block2 {
+    padding: 12px;
+}
+section.Assignment .total-question.rounded-circle {
+    text-align: center;
+    color: #fff;
+    background-color: #044269;
+}
+.assignment-block2 .recommended-block {
+     
+     background-color: #edf9ff;
+ }
+ .assignment-block2 .recommended-heading {
+    background-color: #044269;
+    color: #fff;
+    padding: 12px 0px 7px 1px;
+}
+.assignment-block2 .recommended-content {
+    padding: 37px 12px 31px 76px;
+}
+.assignment-block2  .btn-start{
+    background-color: #044269;
+    border-radius: 0px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 9px 24px;
+    font-weight: 700;
+}
+.Assignment .total-question {
+    height: 54%;
+    width: 69%;
+    color: #fff;
+    border-radius: 100%;
+    text-align: center;
+    background-color: #044269;
+    padding: 10px 10px;
+}
+.questions-block hr {
+    border: 1px solid #044269;
+}
+.total-question h4 {
+    font-size: 21px;
+}
+
+.questions-block .btn-skip{
+    color: #fff;
+    background-color: #e55a19;
+    border-radius: 0px;
+    padding: 5px 27px;
+}
+
+.questions-block .btn-nexts {
+    background-color: #044269;
+    color: #fff;
+    border-radius: 0px;
+    padding: 5px 27px;
+}
+
+
+
+.questions-block .pagination-block {
+    padding-top: 93px;
+}
+
+.pagination>li>a, .pagination>li>span { border-radius: 50% !important;margin: 0 5px;}
+.questions-block .page-link {
+    position: relative;
+    display: block;
+    padding: 13px 17px;
+    background-color: #06456c;
+    border: 1px solid #dee2e6;
+    color: #fff;
+}
+.questions-block .legend-option p {
+    margin: 0px;
+}
+.questions-block .legend-option  {
+    float: right;
+    margin: 24px 0px;
+}
+.questions-block .legend-option span.skip {
+    color: #e55a19;
+}
+.questions-block .legend-option  span.Current {
+    color: #868c86;
+}
+.questions-block .legend-option span.Attempted {
+    color: #06456c;
+}
+.questions-block .legend-option span.not-Attempted {
+    color: #000;
+}
+.questions-block .reappear-block {
+    background-color: #06456c;
+     color: #fff; 
+    padding: 7px;
+}
+/* */
+.questions-block .timing {
+    height: 54%;
+    width: 69%;
+    color: #fff;
+    border-radius: 100%;
+    text-align: center;
+    background-color: #044269;
+    padding: 10px 10px;
+}
+.questions-block .timing  h4 {
+    font-size: 21px;
+}
+.questions-block .timing-section h5{
+    color:#044269;
+
+}
+</style>
+</head>
+<body>
+
+<header>
+
+	<!--top-bar-header-->
+	<div class="top-bar-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 d-flex justify-content-start">
+					<div class="top-list top-list-right">
+						<ul>
+							<li><a href="dashborad.html"><span><i class="fa fa-phone" aria-hidden="true"></i></span>0120 242 424</a></li>
+							<li><a href="contact.html"><span><i class="fa fa-envelope" aria-hidden="true"></i></span>info@writerpanel.com</a></li>
+							           
+						</ul>
+					</div>
+			   </div>
+				<div class="col-md-6">
+					<div class="top-list d-flex justify-content-end">
+						<ul>
+							<li><a href="dashborad.html">Online Test </a></li>
+							<li><a href="contact.html">Available Jobs</a></li>
+							<li><a href="contact.html">Log in</a></li>           
+						</ul>
+					</div>
+			   </div>
+		    </div>
+		</div>
+	</div>
+
+<!--Main-header--->
+<div class="main-header">
+	<div class="container">		
+		<nav class="navbar navbar-expand-md navbar-dark">							
+				   <a class="navbar-brand logo" href="index.html"><img src="img/logo.png" alt="logo"></a>
+			      <button class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></button>		         
+			    <div class="collapse navbar-collapse menu-responsive" id="navbarsExampleDefault">
+			        <ul class="navbar-nav">
+			          <li class="nav-item active">
+			            <a class="nav-link" href="#">About Us<span class="sr-only">(current)</span></a>
+			          </li>
+			           <li class="nav-item">
+			            <a class="nav-link disabled" href="#">Learning Center</a>
+			          </li>
+
+			          <!--<li class="nav-item dropdown">
+			            <a class="nav-link dropdown-togglex" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Service</a>
+			            <div class="dropdown-menu" aria-labelledby="dropdown01">
+			              <a class="dropdown-item" href="#">Email Marketing</a>
+			              <a class="dropdown-item" href="#">Transactional Email API</a>
+			              <a class="dropdown-item" href="#">Support Comparison</a>			              
+			            </div>
+			          </li>-->
+			           <li class="nav-item">
+			            <a class="nav-link disabled" href="#">FAQ's </a>
+			          </li>
+			          <li class="nav-item">
+			            <a class="nav-link btn-login" href="#">Blog</a>
+			          </li> 
+			          <li class="nav-item">
+			            <a class="nav-link disabled" href="#">Contact Us</a>
+			          </li>			         
+			          <a class="btn btn-register" href="#">Register Now</a>
+			        </ul>       
+			    </div>			  
+		</nav>
+    </div>
+</div>
+
+</header>
+
+
+<!---aboutus-block--->
+
+
+<section class="test-start">
+    <div class="container">
+        <div class="assignment-block">
+            <div class="row">
+                <div class="col-md-7">
+                    <!--<p class="heading"><b>1.Assigment:</b>Multiple Choice Questions</p>-->
+                    <h6> <strong>1.Assigment:</strong> Multiple Choice Questions</h6>
+                    <p>This test is to assess a candidate's overall understanding of essential aspects of academic writing. </p>
+                    <p> <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span> Plagiarism</p>
+                    <p> <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span> Referencing</p>
+                    <p> <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span> Formating</p>
+                    <p> <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span> Types of academic writing</p>
+                    <p> <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span> Grammar</p>
+                    <button type="submit" class="btn btn-signup" id="start_test" onclick="">CLICK TO START</button>
+                </div>
+                    <div class="col-md-5">
+                        <div class="recommended-block">
+                             <div class="row">
+                                <div class="col-md-12">
+                                    <div class="recommended-heading">
+                                    <h4 class="text-center"> <span> <i class="fa fa-hand-paper-o" aria-hidden="true"></i></span> HIGHLY RECOMMENDED</h4>
+                                    </div> 
+                                </div>
+                                <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="recommended-content">
+                                               <!-- <h5 class="text-center">Make sure to go through <span>Learning center</span> thoroughly before you take the test.</h5>-->
+                                                  <h5 class="text-center">Make sure to go through </h5>
+                                                 <h5  class="text-center">Learning center</h5>
+                                                 <h5  class="text-center">thoroughly before you take the test</h5>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="query-button">
+                    <button type="submit" class="btn btn-query" id="post_qeury">Post a Query </button>   
+                </div>   
+            </div>
+    </div>
+</section>
+
+ 
+<section class="Assignment">
+    <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="">
+                            <h6> <strong>Assigment 1 :</strong> Multiple Choice Questions</h6>
+                            <h6> <strong>Test Duration :</strong> 40 minutes</h6>
+                            <h6> <strong>Number of questions :</strong>10</h6>
+                    </div>
+                </div>
+                    <div class="col-md-1">
+                            <div class="total-question">
+                                <h4>40</h4>
+                            </div>
+                            <p>Minutes</p>
+                </div>
+                <div class="col-md-1">
+                        <div class="total-question">
+                            <h4>0</h4>
+                        </div>
+                        <p>Seconds</p>
+            </div>
+            </div>   
+            <hr>
+            <!----->
+            <div class="assignment-block2">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <!--<p class="heading"><b>1.Assigment:</b>Multiple Choice Questions</p>-->
+                            <h6> <strong>Instructions</strong></h6>
+                           
+                            <p>1. Each question carry 1 mark.</p>
+                            <p>2. Once the test is started,it cannot be submitted untill the questions are answered.</p>
+                            <p>3.Questions can be skipped and reattempted  if not only answered.</p>
+                            <p>4. Do not swap/minimize the window during the test.</p>
+                            
+                        </div>
+                            <div class="col-md-5">
+                                <div class="recommended-block">
+                                     <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="recommended-heading">
+                                            <h4 class="text-center"> <span> <i class="fa fa-hand-paper-o" aria-hidden="true"></i></span> HIGHLY RECOMMENDED</h4>
+                                            </div> 
+                                        </div>
+                                        <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="recommended-content">
+                                                       <!-- <h5 class="text-center">Make sure to go through <span>Learning center</span> thoroughly before you take the test.</h5>-->
+                                                          <h5 class="text-center">Make sure to go through </h5>
+                                                         <h5  class="text-center">Learning center</h5>
+                                                         <h5  class="text-center">thoroughly before you take the test</h5>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+               
+                <div class="row">
+                        <div class="col-md-12">
+                                <div class="query-button">
+                                    <button type="submit" class="btn btn-start">Start the test</button>   
+                                </div>   
+                        </div>
+                </div>
+            </div>
+        </div>     
+</section>
+<!--short answer questions-->
+<section class="questions-block">
+  <div class="container">
+          <hr>
+        <div class="row">
+          <div class="col-md-7"> 
+                <div class="questions-upper-block">
+                    <h3>Short Answer Questions</h3>
+                    <p>Total Time: 40 minutes</p>
+                   <!-- <h5>Question 2/20</h5>-->
+                </div>
+          </div>
+           <div class="col-md-5">
+                 <div class="">
+                   <p >Please do not refresh your current page.Your time will be elapsed.</p>
+                 </div>
+            </div>
+        </div> 
+        <div class="row">
+            
+                <div class="col-md-10">
+                    <div class="timing-section">
+                        <h5>Question 2/20</h5>
+                    </div>    
+                </div>
+                <div class="col-md-1">
+                        <div class="timing">
+                                <h4>30</h4>
+                            </div>
+                            <p>Minutes</p>
+                </div>
+                <div class="col-md-1">
+                        <div class="timing">
+                                <h4>40</h4>
+                            </div>
+                            <p>Seconds</p>
+                </div>
+                 
+
+        </div>
+         <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <h6> <strong>2. Which among the following is not true about research page?</strong></h6>
+                    <h6> <strong>Ans:</strong> </h6>
+                        <p> <span><input type="checkbox"> Present interpretation and analysis of others</p>
+                        <p> <span><input type="checkbox"> Has clear and arguable thesis</p>
+                        <p> <span><input type="checkbox"> It is question based</p>
+                        <p> <span><input type="checkbox"> It's purpose is to be convince</p>                          
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                        <div class="row">
+                                <div class="col-md-6">
+                                    <button type="submit" class="btn btn-skip">Skip</button>   
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="submit" class="btn btn-nexts float-right">Next</button>   
+                                  </div>
+                              </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                        <div class="pagination-block">
+                                <ul class="pagination">
+                                        <li class="page-item"><a class="page-link" href="#"> <span class="pages"><i class="fa fa-chevron-left" aria-hidden="true"></i><span></a></li>
+                                    <li class="page-item"><a class="page-link" href="#"> <span class="pages">1<span></a></li>
+                                      <li class="page-item"><a class="page-link" href="#"> <span class="pages">2<span></a></li>
+                                        <li class="page-item"><a class="page-link" href="#"> <span class="pages">3<span></a></li>  
+                                    <li class="page-item"><a class="page-link" href="#"> <span class="pages">4<span></a></li>
+                                      <li class="page-item"><a class="page-link" href="#"> <span class="pages">5<span></a></li>
+                                        <li class="page-item"><a class="page-link" href="#"> <span class="pages">6<span></a></li>
+                                          <li class="page-item"><a class="page-link" href="#"> <span class="pages">7<span></a></li>
+                                            <li class="page-item"><a class="page-link" href="#"> <span class="pages">8<span></a></li>
+                                              <li class="page-item"><a class="page-link" href="#"> <span class="pages">9<span></a></li>  
+                                          <li class="page-item"><a class="page-link" href="#"> <span class="pages">10<span></a></li>
+                                            <li class="page-item"><a class="page-link" href="#"> <span class="pages">11<span></a></li>
+                                              <li class="page-item"><a class="page-link" href="#"> <span class="pages">12<span></a></li>
+                                                <li class="page-item"><a class="page-link" href="#"> <span class="pages">13<span></a></li>  
+                                                  <li class="page-item"><a class="page-link" href="#"> <span class="pages">14<span></a></li>
+                                                    <li class="page-item"><a class="page-link" href="#"> <span class="pages">15<span></a></li>
+                                                        <li class="page-item"><a class="page-link" href="#"> <span class="pages">16<span></a></li>
+                                                      <li class="page-item"><a class="page-link" href="#"> <span class="pages"><i class="fa fa-chevron-right" aria-hidden="true"></i> <span></a></li>
+                                          
+                                  </ul>
+                                </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="legend-option">
+                      <p><strong> Legend</strong></p>
+                      <p> <span class="skip"> <i class="fa fa-square" aria-hidden="true"></i></span> Skip</p>
+                      <p>  <span  class="Current"> <i class="fa fa-square" aria-hidden="true"></i></span> Current</p>
+                      <p> <span  class="Attempted"><i class="fa fa-square" aria-hidden="true"></i></span> Attempted</p>
+                      <p>  <span  class="not-Attempted"> <i class="fa fa-square" aria-hidden="true"></i></span> Not Attempted</p>
+                      
+                     </div>
+                </div>
+            </div>
+             <div class="row">
+                 <div class="col-md-12">
+                  <div class="reappear-block">
+                    <h5>oops!!</h5>
+                    <h6>You couldn't Secure the minimum passing secure.You have a golden chance to reappear for the test after 24 hours.</h6>
+                  </div>
+                 </div>
+               
+            </div>
+     </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!--footer-block-->
+
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="footer-col">
+					<h4>About Us</h4>
+					<p>All beginners receive continuous support during their first steps in the system. Our mentorship program helps our writers to adapt in the bidding progress.</p>
+					<div class="payment-card">
+						<a href="#"><img src="img/visa.jpg" alt="card"></a>
+						<a href="#"><img src="img/paypal.jpg" alt="card"></a>
+						<a href="#"><img src="img/amre.jpg" alt="card"></a>
+						<a href="#"><img src="img/master-c.jpg" alt="card"></a>
+						<a href="#"><img src="img/discover.jpg" alt="card"></a>						
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="footer-col">
+					<h4>Useful Links</h4>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">How it Works</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Available Jobs</a></li>
+						<li><a href="#">Knowledge Center(Blog)</a></li>						
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="footer-col">
+					<h4>Newsletter</h4>
+					<form action="/action_page.php">
+						 <label>Sign up to the latest update</label>
+					  <div class="form-group">
+
+					    <input type="email" class="form-control" id="email" placeholder="Email address:" required="">
+					  </div>  
+					  <button type="submit" class="btn btn-signup">Sign Up</button>
+					</form>
+
+					<div class="socail-b">
+						<h4>Follow Us :</h4>
+						<ul>
+							<li><a href="#"><img src="img/fb.png" alt="icon"></a></li>
+							<li><a href="#"><img src="img/te.png" alt="icon"></a></li>
+							<li><a href="#"><img src="img/skype.png" alt="icon"></a></li>
+							<li><a href="#"><img src="img/linkdin.png" alt="icon"></a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>			
+		</div>		
+	</div>
+	<div class="footer-copyright">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12"><p>© 2019 Writer Panel..All Rights Reserved.</p></div>
+			</div>
+	    </div>
+	</div>
+</footer>
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<script>
+$(document).ready(function(){
+  $(".menu-toggle").click(function(){
+    $(".navbar-nav").slideToggle();
+  });
+
+
+  let els = document.getElementsByClassName('step');
+let steps = [];
+Array.prototype.forEach.call(els, (e) => {
+  steps.push(e);
+  e.addEventListener('click', (x) => {
+    progress(x.target.id);
+  });
+});
+
+function progress(stepNum) {
+  let p = stepNum * 33;
+  document.getElementsByClassName('percent')[0].style.width = `${p}%`;
+  steps.forEach((e) => {
+    if (e.id === stepNum) {
+      e.classList.add('selected');
+      e.classList.remove('completed');
+    }
+    if (e.id < stepNum) {
+      e.classList.add('completed');
+    }
+    if (e.id > stepNum) {
+      e.classList.remove('selected', 'completed');
+    }
+  });
+}
+ 
+});
+
+
+</script>
+
+
+
+<script type="text/javascript">
+$(function(){
+
+	$("#stage").load('interactive.svg',function(response){
+
+		$(this).addClass("svgLoaded");
+		
+		if(!response){
+			// Error loading SVG!
+			// Make absolutely sure you are running this on a web server or localhost!
+		}
+
+	});
+});
+
+document.getElementById("start_test").onclick=function(){
+    location.href = "newone.html";
+};
+document.getElementById("post_query").onclick=function()
+{
+    location.href="post-query.html";
+};
+
+</script>
+
+
+
+</body>
+</html>
